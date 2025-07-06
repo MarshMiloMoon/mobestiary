@@ -1,0 +1,51 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "mobestiary:block/clay_nose",
+		"particle": "minecraft:block/clay"
+	},
+	"elements": [
+		{
+			"from": [6, 0, 7],
+			"to": [11, 2, 12],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6, 0, 7]},
+			"faces": {
+				"north": {"uv": [0, 8.5, 2.5, 9.5], "texture": "#0"},
+				"east": {"uv": [2.5, 8.5, 5, 9.5], "texture": "#0"},
+				"south": {"uv": [5, 8.5, 7.5, 9.5], "texture": "#0"},
+				"west": {"uv": [7.5, 8.5, 10, 9.5], "texture": "#0"},
+				"up": {"uv": [2.5, 8.5, 0, 6], "texture": "#0"},
+				"down": {"uv": [5, 6, 2.5, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 0, 4],
+			"to": [10, 2, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 0, 4]},
+			"faces": {
+				"north": {"uv": [0, 9.5, 2.5, 10.5], "texture": "#0"},
+				"east": {"uv": [2.5, 9.5, 5, 10.5], "texture": "#0"},
+				"south": {"uv": [5, 9.5, 7.5, 10.5], "texture": "#0"},
+				"west": {"uv": [7.5, 9.5, 10, 10.5], "texture": "#0"},
+				"up": {"uv": [7.5, 8.5, 5, 6], "texture": "#0"},
+				"down": {"uv": [10, 6, 7.5, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 0.025, 2],
+			"to": [13, 0.025, 14],
+			"rotation": {"angle": 0, "axis": "y", "origin": [3, 0.025, 2]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 6, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 5, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 6, 0], "texture": "#0"},
+				"up": {"uv": [5, 6, 0, 0], "texture": "#0"},
+				"down": {"uv": [10, 0, 5, 6], "texture": "#0"}
+			}
+		}
+	]
+}
