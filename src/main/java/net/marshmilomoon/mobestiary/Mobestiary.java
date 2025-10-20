@@ -2,6 +2,7 @@ package net.marshmilomoon.mobestiary;
 
 import com.mojang.logging.LogUtils;
 import net.marshmilomoon.mobestiary.block.ModBlocks;
+import net.marshmilomoon.mobestiary.entity.ModEntities;
 import net.marshmilomoon.mobestiary.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -42,6 +43,7 @@ public class Mobestiary {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
