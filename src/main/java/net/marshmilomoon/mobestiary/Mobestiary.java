@@ -3,6 +3,7 @@ package net.marshmilomoon.mobestiary;
 import com.mojang.logging.LogUtils;
 import net.marshmilomoon.mobestiary.block.ModBlocks;
 import net.marshmilomoon.mobestiary.entity.ModEntities;
+import net.marshmilomoon.mobestiary.entity.client.ClayGolemRenderer;
 import net.marshmilomoon.mobestiary.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -52,6 +53,9 @@ public class Mobestiary {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if(event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            event.accept(ModItems.CLAY_GOLEM_SPAWN_EGG);
+        }
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.POSISHARD);
             event.accept(ModItems.SCALES);
@@ -73,24 +77,7 @@ public class Mobestiary {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            //EntityRenderers.register(ModEntities.GECKO.get(), GeckoRenderer::new);
-
-            //ItemBlockRenderTypes.setRenderLayer(ModBlocks.BLOODWOOD_SAPLING.get(), ChunkSectionLayer.CUTOUT);
-        }
-
-        @SubscribeEvent
-        public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
-
-        }
-
-        @SubscribeEvent
-        public static void registerBER(EntityRenderersEvent.RegisterRenderers event) {
-
-        }
-
-        @SubscribeEvent
-        public static void registerScreens(RegisterMenuScreensEvent event) {
-
+            EntityRenderers.register(ModEntities.CLAY_GOLEM.get(), ClayGolemRenderer::new);
         }
     }
 }

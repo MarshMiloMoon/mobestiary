@@ -19,7 +19,7 @@ public class ModEntities {
             ENTITY_TYPES.register("clay_golem", () -> EntityType.Builder.of(ClayGolemEntity::new, MobCategory.MISC)
                     .sized(1f, 1.125f).build("clay_golem"));
 
-    public static void register(IEventB eventBus) {
-
+    public static void register(IEventBus eventBus) {
+        ENTITY_TYPES.register(eventBus);
     }
 }

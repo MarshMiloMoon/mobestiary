@@ -1,16 +1,22 @@
 package net.marshmilomoon.mobestiary.item;
 
 import net.marshmilomoon.mobestiary.Mobestiary;
+import net.marshmilomoon.mobestiary.entity.ModEntities;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
 
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Mobestiary.MOD_ID);
+
+    public static final DeferredItem<Item> CLAY_GOLEM_SPAWN_EGG = ITEMS.register("clay_golem_spawn_egg",
+            () -> new DeferredSpawnEggItem(ModEntities.CLAY_GOLEM, 0x828ca1, 0xcad0de,
+                    new Item.Properties()));
 
     public static final DeferredItem<Item> POSISHARD = ITEMS.registerItem("posishard",
             Item::new, new Item.Properties());

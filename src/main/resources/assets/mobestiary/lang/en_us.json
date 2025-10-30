@@ -1,6 +1,10 @@
 {
+  "item.mobestiary.clay_golem_spawn_egg": "Clay Golem Spawn Egg",
+
   "item.mobestiary.posishard": "Posishard",
   "item.mobestiary.scales": "Scales",
 
-  "block.mobestiary.clay_nose": "Clay Nose"
+  "block.mobestiary.clay_nose": "Clay Nose",
+
+  "entity.mobestiary.clay_golem": "Clay Golem"
 }
